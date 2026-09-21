@@ -58,8 +58,11 @@ date and mention the Srimandir date in `description`.
   current script and run `setup`. The first sync hit Google's write limit,
   and the batched, self-resuming sync is finishing the migration from
   English to Odia titles.
-- Next: the owner makes the calendar public and shares the links, then fill
-  the `__SUBSCRIBE_LINK__` and `__ICAL_URL__` placeholders in README.
+- `index.html` is the public subscribe page, written in Odia only (Google's
+  button labels stay in English) and served by GitHub Pages at
+  rudrapr.github.io/odia-festivals.
+- Next: the owner makes the calendar public, enables Pages, and sends the
+  shareable link. Then fill `SUBSCRIBE_URL` and `ICAL_URL` in `index.html`.
 
 ## Monthly check
 
