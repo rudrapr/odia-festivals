@@ -6,15 +6,10 @@ Boita Bandana, Prathamastami and more — with dates as observed in Odisha.
 
 ## Add it to your calendar
 
-1. Open **[Add Odia Festivals to Google Calendar](__SUBSCRIBE_LINK__)** and tap **Add**.
-2. In the Google Calendar app: **☰ → Settings → Odia Festivals → all-day
-   notifications**, and add the reminders you want (for example 1 week, 3 days,
-   1 day before, and on the day at 9 AM).
-3. If it doesn't show on your phone, open that same settings page and turn on **Sync**.
-
+**[rudrapr.github.io/odia-festivals](https://rudrapr.github.io/odia-festivals/)**
+has the one-tap "Add to Google Calendar" button, an iPhone option, and reminder
+instructions, all in Odia. That page (`index.html`) is the link to share.
 New years and corrected dates show up on their own. Nothing to re-add.
-
-iPhone / Outlook: subscribe to the iCal address `__ICAL_URL__`.
 
 ## Dates
 
