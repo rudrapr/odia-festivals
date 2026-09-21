@@ -54,14 +54,25 @@ date and mention the Srimandir date in `description`.
 - Coverage runs from Sep 2026 to Dec 2027: 107 events, 48 confirmed.
   Everything from 14 Apr 2027 onward is tentative until the SJTA 2027-28
   calendar and the Odisha 2027 holiday list come out.
-- The owner ran the first version of the script, which had the data built in
-  and English titles. The version here (fetches the JSON, Odia titles,
-  daily trigger) is not deployed yet.
-- Next steps:
-  1. Push to the GitHub repo.
-  2. The owner pastes the new script and runs `setup`.
-  3. The owner makes the calendar public and shares the link.
-  4. Fill the `__SUBSCRIBE_LINK__` and `__ICAL_URL__` placeholders in
-     README.
-  5. Set up a monthly scheduled Claude routine that re-checks upcoming dates
-     against the allowed sources and opens a PR for the owner to review.
+- Deployed on 2026-09-21: the repo is on GitHub and the owner has pasted the
+  current script and run `setup`. The first sync hit Google's write limit,
+  and the batched, self-resuming sync is finishing the migration from
+  English to Odia titles.
+- Next: the owner makes the calendar public and shares the links, then fill
+  the `__SUBSCRIBE_LINK__` and `__ICAL_URL__` placeholders in README.
+
+## Monthly check
+
+The Claude desktop scheduled task `odia-festivals-monthly-check` runs on the
+owner's laptop at 10:00 on the 1st of each month. It runs late if the app was
+closed. It works in this folder:
+1. Pull, then check the allowed sources above.
+2. Update `festivals.json` and run `node scripts/validate.mjs`.
+3. If anything changed, push a branch `update-YYYY-MM` and report a compare
+   link.
+4. Never push to `main` until the owner approves. The owner replies "merge"
+   in that run's session, or merges on GitHub.
+
+Running it on cortex was considered and deferred. Cortex has no GitHub
+access by design (see the MacMini ops repo), and giving it a
+single-repository token was not approved.
