@@ -61,8 +61,10 @@ date and mention the Srimandir date in `description`.
 - `index.html` is the public subscribe page, written in Odia only (Google's
   button labels stay in English) and served by GitHub Pages at
   rudrapr.github.io/odia-festivals.
-- Next: the owner makes the calendar public, enables Pages, and sends the
-  shareable link. Then fill `SUBSCRIBE_URL` and `ICAL_URL` in `index.html`.
+- Live since 2026-09-21: the calendar is public
+  (ID `c2ad49a7…d71c@group.calendar.google.com`; the full ID and its links
+  are in `index.html`), the migration to Odia titles has finished (107
+  events in the public iCal feed), and GitHub Pages is serving the page.
 
 ## Monthly check
 
